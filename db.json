@@ -1,0 +1,25 @@
+{
+    "schools": [
+      {
+        "id": 1,
+        "name": "Ryan International School"
+        
+        
+      },
+      {
+        "id": 2,
+        "name": "Wisdom HighSchool"
+        
+      },
+      {
+        "id": 3,
+        "name": "Ashoka Business School"
+        
+      },
+      {
+        "id": 4,
+        "name": "Symbiosis Highschool"
+        
+      }
+    ]
+  }
