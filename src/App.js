@@ -6,7 +6,7 @@ import {
   Link, 
   Switch 
 } from 'react-router-dom'; 
-
+import React from 'react'; 
 
 import Home from './stepapp/Home';
 import './App.css';
@@ -17,9 +17,14 @@ import Topics from './stepapp/Topics';
 import demoapi from './stepapp/demoapi';
 
 
-function App() {
-  return (
-          <Router> 
+class App extends React.Component {
+  onClick = e => {
+    e.preventDefault();
+    this.props.history.goBack();
+  };
+  render(){
+    return(
+      <Router> 
                 
               <div className="App"> 
                 {/*<ul> 
@@ -33,6 +38,7 @@ function App() {
                       <Link to="/contact">Contact Us</Link> 
                     </li> 
   </ul> */}
+                
   <Switch> 
                   <Route exact path='/' component={Home}></Route> 
                   <Route exact path='/login' component={Login}></Route> 
@@ -45,7 +51,10 @@ function App() {
                 </Switch>
               </div> 
           </Router>
-  );
+    );
+  }
+
+  
 }
 
 export default App;
