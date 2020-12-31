@@ -11,13 +11,13 @@
   margin-right: 120px;
 }
 .main{
-  margin-left: 30px;
-  margin-top: 5px;
+  margin-left: 2px;
+  margin-top: 2px;
   margin-bottom: 20px;
   
 }
 .main .logo img{
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 10px;
 
 }
@@ -28,14 +28,24 @@
   background-color:#FF9201;
   height:230px;
   margin-bottom: 30px;
-  margin-top: -60px; 
+  margin-top: -127px; 
   
 
 }
-.root2 #belowlogo{
+.home .root2 #belowlogo{
   margin-left: 100px;
   margin-bottom: 30px;
   margin-top: 40px;
+  padding-top: 10px;
+}
+.root2 #belowlogo .firsttext{
+  margin-top:20px ;
+}
+.root2 #secondtext{
+  padding-top:-40px ;
+  margin-left:100px ;
+  margin-top: -30px;
+
 }
 /* 2nd part*/
 .root3{
@@ -55,9 +65,9 @@
   margin-right: auto;
   padding-left: 200px;
   width:700px;
-  
-
-  
+}
+.root3 #imagestepapp{
+  padding-top: 40px;
 }
 
 .root3 .dropdown #inputGroupSelect04::after{
@@ -82,6 +92,10 @@ border-radius: 30px;
 }
 .root3 .row .pro{
   color: white;
+  padding-top: 4px;
+  padding-left: 5px;
+  justify-content: center;
+  
   }
   /* 3rd part */
   #header {
@@ -200,7 +214,7 @@ border-radius: 30px;
   background-color:  #0C2657;
   height:800px;
   width:1500px;
-  margin-top: 20px;
+  
 }
 .login1 .centre{
   position: absolute;
@@ -216,6 +230,7 @@ width: 250px;
 height: 100px;
 left: 540px;
 top: 270px;
+
 }
 .login1 #mybtn{
   
@@ -223,8 +238,9 @@ top: 270px;
 width: 500px;
 height: 60px;
 left: 440px;
-top: 210px;
+top: 240px;
 border-radius: 30px;
+
 }
 .login1 #mybtn1{
   
@@ -232,7 +248,7 @@ border-radius: 30px;
 width: 500px;
 height: 60px;
 left: 440px;
-top: 270px;
+top: 295px;
 border-radius: 30px;
 }
 .login1 #login3{
@@ -248,13 +264,15 @@ top: 460px;
   color:orange;
 }
 .login1 #mybtn11{
-  margin-top: 400px;
+  margin-top: 420px;
   width:530px;
   margin-left: 430px;
   border-radius: 30px;
 }
 .login1 .pro{
  color:white;
+ justify-content: center;
+ padding-top: 5px;
 }
 .login1 .pro9{
   background-color:#0D2249;
