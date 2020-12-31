@@ -71,11 +71,11 @@ componentDidMount(){
     return (
             
         
-        <div>
+        <div className="home">
            
-            <div className="name">
+            {/*<div className="name">
             <p id="namedisplaycorner">welcome    {schools.data[0].first_name}</p>
-            </div>
+            </div>*/}
             {/*logo*/}
             <div className="main">
             <p className="logo">
@@ -85,10 +85,13 @@ componentDidMount(){
           
             {/*1st part*/}
            <p className="root2" style={{color:'white'}}>
-            <p id="belowlogo">Students from class 5th to 11th ,Here is Your Dream Opportunity!</p>
+            <p id="belowlogo" >
+              <div className="firsttext" >
+                Students from class 5th to 11th ,Here is Your Dream <div>Opportunity!</div>
+              </div></p>
             <div></div>
             <p></p><br/>
-                <h1>
+                <h1 id="secondtext">
             <div>{"Play,Learn & Build Your"}</div> 
             <div>{"Own Future"}</div>
             </h1>
@@ -96,11 +99,11 @@ componentDidMount(){
             </p>
             {/* 2nd part*/}
             <p className="root3"  >
-            
-                <img src={stepapp} width="200"  height="100" class="centre"/>
-               
+                <div id="imagestepapp">
+                <img src={stepapp} width="100"  height="72"  class="centre"/>
+                </div>
                 
-                <b><p style={{ textAlign:'center',fontSize:'30px',color:'white'}}>Select School</p></b>
+                <h4><p style={{ textAlign:'center',fontSize:'30px',color:'white',paddingTop:'30px'}}>Select School</p></h4>
                 
                 
                 
@@ -125,12 +128,9 @@ componentDidMount(){
                                                 )) }
                                       
                             </select>
-                               {/* <Login name={schools.data[0].first_name}/>*/}
+                               {/* <Login name={schools.data[0].first_name}/>*/ }                              
                                
-                               
-                               <div class="alert alert-primary" role="alert">
-                                  please select any name
-                                </div> 
+                                
                                                  
                             </div>
                         
