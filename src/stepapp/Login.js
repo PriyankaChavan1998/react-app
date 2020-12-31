@@ -28,7 +28,7 @@ class Login extends React.Component {
             <img src={logo1} width="70" height="70"/></p>
             
            <img src={stepapp}   class="centre" id="myimg"/>
-           <b><p>welcome  {this.props.name}</p></b>
+           {/*<b><p>welcome  {this.props.name}</p></b>*/}
            <p id="login2">Sign in to your account to continue</p>
            <div class="input-group mb-3">
                 
@@ -36,13 +36,13 @@ class Login extends React.Component {
             </div>
             <div class="input-group mb-3">
                 
-                <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" id="mybtn1"/>
+                <input type="password" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1" id="mybtn1"/>
             </div>
            
             <p id="login3">Don't have an account? <a href="url" id="href"> Sign up</a></p>
             <div >
                     {this.renderRedirect()}
-                    <button type="button" class="btn btn-warning btn-lg btn-block" id="mybtn11" onClick={this.setRedirect}><p class="pro"><b>Sign in</b></p></button>
+                    <button type="button" class="btn btn-warning btn-lg btn-block" id="mybtn11" onClick={this.setRedirect}><p class="pro"><b>Sign In</b></p></button>
                     
             </div>
             <p className="pro9" style={{color:'white'}} >
