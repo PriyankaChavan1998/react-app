@@ -3,12 +3,14 @@ import React from 'react';
 import logo1 from '../images/logo1.png';
   
 class Topics extends React.Component  { 
+    
     render(){
         return(
             <div className="topics">
                 {/*logo*/}
                 <p className="logo">
                 <img src={logo1} width="70" height="70"/></p>
+                
                 <div class="card mb-3" id="mydemo1">
                         
                         <div class="card-body1">
