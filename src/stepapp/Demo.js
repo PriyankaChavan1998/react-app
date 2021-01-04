@@ -10,14 +10,15 @@ class Demo  extends React.Component {
         redirect: false
       }
       setRedirect = () => {
-        this.setState({
+        {/*this.setState({
           redirect: true
-        })
+        })*/}
+        this.props.history.push("/Topics");
       }
       renderRedirect = () => {
-        if (this.state.redirect) {
+        {/*if (this.state.redirect) {
           return <Redirect to='Topics' />
-        }
+        }*/}
       }
     render(){
         return(
@@ -35,7 +36,7 @@ class Demo  extends React.Component {
                         </div>
                 </div>
                 <div class="card mb-3" id="mydemo1" >
-                        {this.renderRedirect()}
+                        {/*{this.renderRedirect()}*/}
                         <div class="card-body1" onClick={this.setRedirect}>
                             <h3 class="card-title" id="free1">Learn Science</h3><br/><br/>
                             <p class="card-text"><b>Light<div>Magnetism</div><div>+6 more Chapters</div></b></p>
