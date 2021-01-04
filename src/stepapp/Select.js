@@ -2,29 +2,38 @@
 import React from 'react'; 
 import { Redirect } from 'react-router-dom'
 import logo1 from '../images/logo1.png';
+
   
 class Select extends React.Component { 
+  
     state = {
         redirect: false
       }
       setRedirect = () => {
-        this.setState({
+        {/*this.setState({
           redirect: true
-        })
+        })*/}
+        this.props.history.push("/Demo");
       }
       renderRedirect = () => {
-        if (this.state.redirect) {
+        {/*if (this.state.redirect) {
           return <Redirect to='Demo' />
-        }
+        }*/}
+        
       }
     render(){
+     
         return(
+          
             <div className="select">
+               <p id="loginname"> welcome {sessionStorage.name}</p>
                  {/*logo*/}
                 <p className="logo">
-                <img src={logo1} width="70" height="70"/></p>
+                <img src={logo1} width="70" height="70" /></p>
+                
                 <div id="header">
                 <b><h1>Select Grade</h1></b>
+                {/*<b><p>welcome  {this.props.name}</p></b>*/}
                 </div>
 
                 <div id="grade">
@@ -63,7 +72,7 @@ class Select extends React.Component {
                 
                 </div>
                 <div >
-                    {this.renderRedirect()}
+                    {/*{this.renderRedirect()}*/}
                     <button type="button" class="btn btn-warning btn-lg btn-block" id="mybtn11" onClick={this.setRedirect} ><p class="pro"><b>Proceed</b></p></button>
                     
             </div>
