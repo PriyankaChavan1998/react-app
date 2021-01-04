@@ -27,10 +27,19 @@ class Home extends React.Component  {
         value:" ",
         
     }
-   
-  
+    this.drop = React.createRef(); 
+    this.handleSubmit = this.handleSubmit.bind(this);
 }
-
+handleSubmit(e) {
+  e.preventDefault();
+  if(this.drop.current.value == 'School Name')
+  {
+    alert('please select name');
+  }
+  else{
+    {this.setRedirect() }
+  }
+}
 
 
 componentDidMount(){
@@ -50,14 +59,15 @@ componentDidMount(){
         redirect: false
       }
       setRedirect = () => {
-        this.setState({
+        {/*this.setState({
           redirect: true
-        })
+        })*/}
+        this.props.history.push("/Login");
       }
       renderRedirect = () => {
-        if (this.state.redirect) {
+       {/* if (this.state.redirect) {
           return <Redirect to='Login' />
-        }
+        }*/}
       }
     render(){
       var{ isLoaded,schools }=this.state;
@@ -113,7 +123,7 @@ componentDidMount(){
                     {/* dropdown*/}
                     <div class="dropdown">
                             <div>
-                            <select class="form-control" id="inputGroupSelect04" data-toggle="dropdown" name="sname" onClick={this.check} >
+                            <select class="form-control" id="inputGroupSelect04" data-toggle="dropdown" name="sname"  ref={this.drop}  >
                                       
                                               <option selected>School Name</option>
                                               {/*<option value="1">St.Francis Highschool</option>
@@ -128,7 +138,7 @@ componentDidMount(){
                                                 )) }
                                       
                             </select>
-                               {/* <Login name={schools.data[0].first_name}/>*/ }                              
+                               {/* <Login name={schools.data[0].first_name}></Login>  */}                  
                                
                                 
                                                  
@@ -141,8 +151,8 @@ componentDidMount(){
                     
 
                 <div class="row">
-                {this.renderRedirect()}
-                    <button type="button" class="btn btn-warning btn-lg btn-block" id="mybtn" onClick={this.setRedirect} ><p class="pro"><b>Proceed</b></p></button>
+               {/* {this.renderRedirect()}*/}
+                    <button type="button" class="btn btn-warning btn-lg btn-block" id="mybtn" onClick={this.handleSubmit} ><p class="pro"><b>Proceed</b></p></button>
                     
                 </div>
                 
